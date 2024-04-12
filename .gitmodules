@@ -2,3 +2,6 @@
 	path = public
 	url = https://github.com/Phuc000/phuc000.github.io.git
 	branch = main
+[submodule "themes/DoIt"]
+	path = themes/DoIt
+	url = https://github.com/HEIGE-PCloud/DoIt.git
