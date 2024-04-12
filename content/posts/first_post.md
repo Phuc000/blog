@@ -13,7 +13,7 @@ toc:
   enable: true
 ---
 
-First post test
+First post
 
 <!--more-->
 ## Overview

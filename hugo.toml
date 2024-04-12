@@ -1,7 +1,7 @@
 baseURL = "http://phuc000.github.io/"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
+theme = "DoIt"
 
 # website title
 title = "Phuc000 Site"
@@ -122,7 +122,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  whether to show the author
     author = true
     # Site creation time
-    since = 2023
+    since = ''
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
