@@ -13,7 +13,7 @@ toc:
   enable: true
 ---
 
-Writeup for rev challenge in the event.
+Writeup for rev challenges in the event.
 
 <!--more-->
 ## Overview
@@ -114,6 +114,8 @@ print(flag)
 **amateursCTF{4t_l3ast_th15_fl4g_isn7_misspelll3d}**
 
 ## bearsay
+
+Trying some pwn.
 
 ```Python
 from pwn import *
