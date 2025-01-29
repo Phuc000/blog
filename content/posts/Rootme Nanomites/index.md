@@ -70,4 +70,4 @@ With that info, the challenge is now clear to solve. Going with the child proc f
 
 So I do some backtrace from the "Good." output and obtain the correct flag.
 
-**doyoulikenanomite?**
+<!-- **doyoulikenanomite?** -->
